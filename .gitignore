@@ -1,0 +1,95 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+pip-wheel-metadata/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.pytype/
+.ipynb_checkpoints/
+
+# =========================
+# Logs & Runtime
+# =========================
+*.log
+logs/
+*.pid
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Docker
+# =========================
+.dockerignore
+docker-compose.override.yml
+docker-compose.local.yml
+*.dockerfile
+**/Dockerfile.dev
+**/Dockerfile.local
+
+# =========================
+# Kafka / Zookeeper
+# =========================
+kafka-logs/
+zookeeper-data/
+zookeeper-logs/
+kraft-combined-logs/
+meta.properties
+
+# =========================
+# Databases / State
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+data/
+volumes/
+
+# =========================
+# Build & Dist
+# =========================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Misc
+# =========================
+*.pem
+*.key
+*.crt
