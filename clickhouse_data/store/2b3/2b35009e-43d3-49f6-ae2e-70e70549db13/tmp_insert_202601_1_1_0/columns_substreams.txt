@@ -18,11 +18,9 @@ columns substreams version: 1
 	query_start_time_microseconds
 1 substreams for column `query_duration_ms`:
 	query_duration_ms
-2 substreams for column `read_rows`:
-	read_rows.sparse.idx
+1 substreams for column `read_rows`:
 	read_rows
-2 substreams for column `read_bytes`:
-	read_bytes.sparse.idx
+1 substreams for column `read_bytes`:
 	read_bytes
 2 substreams for column `written_rows`:
 	written_rows.sparse.idx
@@ -30,11 +28,9 @@ columns substreams version: 1
 2 substreams for column `written_bytes`:
 	written_bytes.sparse.idx
 	written_bytes
-2 substreams for column `result_rows`:
-	result_rows.sparse.idx
+1 substreams for column `result_rows`:
 	result_rows
-2 substreams for column `result_bytes`:
-	result_bytes.sparse.idx
+1 substreams for column `result_bytes`:
 	result_bytes
 1 substreams for column `memory_usage`:
 	memory_usage
@@ -85,15 +81,12 @@ columns substreams version: 1
 	views.size0
 	views.dict
 	views
-2 substreams for column `exception_code`:
-	exception_code.sparse.idx
+1 substreams for column `exception_code`:
 	exception_code
-3 substreams for column `exception`:
-	exception.sparse.idx
+2 substreams for column `exception`:
 	exception.size
 	exception
-3 substreams for column `stack_trace`:
-	stack_trace.sparse.idx
+2 substreams for column `stack_trace`:
 	stack_trace.size
 	stack_trace
 1 substreams for column `is_initial_query`:
@@ -145,20 +138,25 @@ columns substreams version: 1
 	client_name.dict_prefix
 	client_name.dict
 	client_name
-1 substreams for column `client_revision`:
+2 substreams for column `client_revision`:
+	client_revision.sparse.idx
 	client_revision
-1 substreams for column `client_version_major`:
+2 substreams for column `client_version_major`:
+	client_version_major.sparse.idx
 	client_version_major
-1 substreams for column `client_version_minor`:
+2 substreams for column `client_version_minor`:
+	client_version_minor.sparse.idx
 	client_version_minor
-1 substreams for column `client_version_patch`:
+2 substreams for column `client_version_patch`:
+	client_version_patch.sparse.idx
 	client_version_patch
-1 substreams for column `script_query_number`:
+2 substreams for column `script_query_number`:
+	script_query_number.sparse.idx
 	script_query_number
-1 substreams for column `script_line_number`:
+2 substreams for column `script_line_number`:
+	script_line_number.sparse.idx
 	script_line_number
-2 substreams for column `http_method`:
-	http_method.sparse.idx
+1 substreams for column `http_method`:
 	http_method
 3 substreams for column `http_user_agent`:
 	http_user_agent.dict_prefix

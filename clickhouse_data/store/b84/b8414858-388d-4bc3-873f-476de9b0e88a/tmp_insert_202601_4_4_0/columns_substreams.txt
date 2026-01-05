@@ -1192,8 +1192,7 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds.sparse.idx
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds
-2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
-	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorWaitMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorWaitMicroseconds.sparse.idx
@@ -1265,8 +1264,7 @@ columns substreams version: 1
 	ProfileEvent_RegexpLocalCacheMiss
 1 substreams for column `ProfileEvent_ContextLock`:
 	ProfileEvent_ContextLock
-2 substreams for column `ProfileEvent_ContextLockWaitMicroseconds`:
-	ProfileEvent_ContextLockWaitMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_ContextLockWaitMicroseconds`:
 	ProfileEvent_ContextLockWaitMicroseconds
 2 substreams for column `ProfileEvent_StorageBufferFlush`:
 	ProfileEvent_StorageBufferFlush.sparse.idx
@@ -1391,13 +1389,15 @@ columns substreams version: 1
 	ProfileEvent_DNSError
 1 substreams for column `ProfileEvent_PartsLockHoldMicroseconds`:
 	ProfileEvent_PartsLockHoldMicroseconds
-1 substreams for column `ProfileEvent_PartsLockWaitMicroseconds`:
+2 substreams for column `ProfileEvent_PartsLockWaitMicroseconds`:
+	ProfileEvent_PartsLockWaitMicroseconds.sparse.idx
 	ProfileEvent_PartsLockWaitMicroseconds
 1 substreams for column `ProfileEvent_PartsLocks`:
 	ProfileEvent_PartsLocks
 1 substreams for column `ProfileEvent_SharedPartsLockHoldMicroseconds`:
 	ProfileEvent_SharedPartsLockHoldMicroseconds
-1 substreams for column `ProfileEvent_SharedPartsLockWaitMicroseconds`:
+2 substreams for column `ProfileEvent_SharedPartsLockWaitMicroseconds`:
+	ProfileEvent_SharedPartsLockWaitMicroseconds.sparse.idx
 	ProfileEvent_SharedPartsLockWaitMicroseconds
 1 substreams for column `ProfileEvent_SharedPartsLocks`:
 	ProfileEvent_SharedPartsLocks
@@ -3597,8 +3597,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled`:
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled.sparse.idx
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled
-2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
-	CurrentMetric_ThreadPoolFSReaderThreads.sparse.idx
+1 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
 	CurrentMetric_ThreadPoolFSReaderThreads
 2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreadsActive`:
 	CurrentMetric_ThreadPoolFSReaderThreadsActive.sparse.idx
@@ -4070,8 +4069,7 @@ columns substreams version: 1
 	CurrentMetric_PartsActive
 1 substreams for column `CurrentMetric_AttachedDatabase`:
 	CurrentMetric_AttachedDatabase
-2 substreams for column `CurrentMetric_AttachedTable`:
-	CurrentMetric_AttachedTable.sparse.idx
+1 substreams for column `CurrentMetric_AttachedTable`:
 	CurrentMetric_AttachedTable
 2 substreams for column `CurrentMetric_AttachedReplicatedTable`:
 	CurrentMetric_AttachedReplicatedTable.sparse.idx

@@ -106,12 +106,14 @@ columns substreams version: 1
 	ProfileEvent_WriteBufferFromFileDescriptorWriteFailed
 1 substreams for column `ProfileEvent_WriteBufferFromFileDescriptorWriteBytes`:
 	ProfileEvent_WriteBufferFromFileDescriptorWriteBytes
-1 substreams for column `ProfileEvent_FileSync`:
+2 substreams for column `ProfileEvent_FileSync`:
+	ProfileEvent_FileSync.sparse.idx
 	ProfileEvent_FileSync
 2 substreams for column `ProfileEvent_DirectorySync`:
 	ProfileEvent_DirectorySync.sparse.idx
 	ProfileEvent_DirectorySync
-1 substreams for column `ProfileEvent_FileSyncElapsedMicroseconds`:
+2 substreams for column `ProfileEvent_FileSyncElapsedMicroseconds`:
+	ProfileEvent_FileSyncElapsedMicroseconds.sparse.idx
 	ProfileEvent_FileSyncElapsedMicroseconds
 2 substreams for column `ProfileEvent_DirectorySyncElapsedMicroseconds`:
 	ProfileEvent_DirectorySyncElapsedMicroseconds.sparse.idx
@@ -170,11 +172,9 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_OpenedFileCacheHits`:
 	ProfileEvent_OpenedFileCacheHits.sparse.idx
 	ProfileEvent_OpenedFileCacheHits
-2 substreams for column `ProfileEvent_OpenedFileCacheMisses`:
-	ProfileEvent_OpenedFileCacheMisses.sparse.idx
+1 substreams for column `ProfileEvent_OpenedFileCacheMisses`:
 	ProfileEvent_OpenedFileCacheMisses
-2 substreams for column `ProfileEvent_OpenedFileCacheMicroseconds`:
-	ProfileEvent_OpenedFileCacheMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_OpenedFileCacheMicroseconds`:
 	ProfileEvent_OpenedFileCacheMicroseconds
 2 substreams for column `ProfileEvent_AIOWrite`:
 	ProfileEvent_AIOWrite.sparse.idx
@@ -969,8 +969,7 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_LoadedDataParts`:
 	ProfileEvent_LoadedDataParts.sparse.idx
 	ProfileEvent_LoadedDataParts
-2 substreams for column `ProfileEvent_LoadedDataPartsMicroseconds`:
-	ProfileEvent_LoadedDataPartsMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_LoadedDataPartsMicroseconds`:
 	ProfileEvent_LoadedDataPartsMicroseconds
 2 substreams for column `ProfileEvent_FilteringMarksWithPrimaryKeyMicroseconds`:
 	ProfileEvent_FilteringMarksWithPrimaryKeyMicroseconds.sparse.idx
@@ -1182,14 +1181,12 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_FetchBackgroundExecutorWaitMicroseconds`:
 	ProfileEvent_FetchBackgroundExecutorWaitMicroseconds.sparse.idx
 	ProfileEvent_FetchBackgroundExecutorWaitMicroseconds
-2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds`:
-	ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds.sparse.idx
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds
-2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
-	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorWaitMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorWaitMicroseconds.sparse.idx
@@ -1372,8 +1369,7 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_USearchSearchComputedDistances`:
 	ProfileEvent_USearchSearchComputedDistances.sparse.idx
 	ProfileEvent_USearchSearchComputedDistances
-2 substreams for column `ProfileEvent_RWLockAcquiredReadLocks`:
-	ProfileEvent_RWLockAcquiredReadLocks.sparse.idx
+1 substreams for column `ProfileEvent_RWLockAcquiredReadLocks`:
 	ProfileEvent_RWLockAcquiredReadLocks
 2 substreams for column `ProfileEvent_RWLockAcquiredWriteLocks`:
 	ProfileEvent_RWLockAcquiredWriteLocks.sparse.idx
@@ -1387,23 +1383,18 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_DNSError`:
 	ProfileEvent_DNSError.sparse.idx
 	ProfileEvent_DNSError
-2 substreams for column `ProfileEvent_PartsLockHoldMicroseconds`:
-	ProfileEvent_PartsLockHoldMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_PartsLockHoldMicroseconds`:
 	ProfileEvent_PartsLockHoldMicroseconds
 2 substreams for column `ProfileEvent_PartsLockWaitMicroseconds`:
 	ProfileEvent_PartsLockWaitMicroseconds.sparse.idx
 	ProfileEvent_PartsLockWaitMicroseconds
-2 substreams for column `ProfileEvent_PartsLocks`:
-	ProfileEvent_PartsLocks.sparse.idx
+1 substreams for column `ProfileEvent_PartsLocks`:
 	ProfileEvent_PartsLocks
-2 substreams for column `ProfileEvent_SharedPartsLockHoldMicroseconds`:
-	ProfileEvent_SharedPartsLockHoldMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_SharedPartsLockHoldMicroseconds`:
 	ProfileEvent_SharedPartsLockHoldMicroseconds
-2 substreams for column `ProfileEvent_SharedPartsLockWaitMicroseconds`:
-	ProfileEvent_SharedPartsLockWaitMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_SharedPartsLockWaitMicroseconds`:
 	ProfileEvent_SharedPartsLockWaitMicroseconds
-2 substreams for column `ProfileEvent_SharedPartsLocks`:
-	ProfileEvent_SharedPartsLocks.sparse.idx
+1 substreams for column `ProfileEvent_SharedPartsLocks`:
 	ProfileEvent_SharedPartsLocks
 2 substreams for column `ProfileEvent_RealTimeMicroseconds`:
 	ProfileEvent_RealTimeMicroseconds.sparse.idx
@@ -2125,23 +2116,18 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheHitBytes`:
 	ProfileEvent_ThreadPoolReaderPageCacheHitBytes.sparse.idx
 	ProfileEvent_ThreadPoolReaderPageCacheHitBytes
-2 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheHitElapsedMicroseconds`:
-	ProfileEvent_ThreadPoolReaderPageCacheHitElapsedMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheHitElapsedMicroseconds`:
 	ProfileEvent_ThreadPoolReaderPageCacheHitElapsedMicroseconds
-2 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMiss`:
-	ProfileEvent_ThreadPoolReaderPageCacheMiss.sparse.idx
+1 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMiss`:
 	ProfileEvent_ThreadPoolReaderPageCacheMiss
-2 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMissBytes`:
-	ProfileEvent_ThreadPoolReaderPageCacheMissBytes.sparse.idx
+1 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMissBytes`:
 	ProfileEvent_ThreadPoolReaderPageCacheMissBytes
-2 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMissElapsedMicroseconds`:
-	ProfileEvent_ThreadPoolReaderPageCacheMissElapsedMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_ThreadPoolReaderPageCacheMissElapsedMicroseconds`:
 	ProfileEvent_ThreadPoolReaderPageCacheMissElapsedMicroseconds
 2 substreams for column `ProfileEvent_AsynchronousReadWaitMicroseconds`:
 	ProfileEvent_AsynchronousReadWaitMicroseconds.sparse.idx
 	ProfileEvent_AsynchronousReadWaitMicroseconds
-2 substreams for column `ProfileEvent_SynchronousReadWaitMicroseconds`:
-	ProfileEvent_SynchronousReadWaitMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_SynchronousReadWaitMicroseconds`:
 	ProfileEvent_SynchronousReadWaitMicroseconds
 2 substreams for column `ProfileEvent_AsynchronousRemoteReadWaitMicroseconds`:
 	ProfileEvent_AsynchronousRemoteReadWaitMicroseconds.sparse.idx
@@ -2588,8 +2574,7 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds`:
 	ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds.sparse.idx
 	ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds
-2 substreams for column `ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds`:
-	ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds`:
 	ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds
 2 substreams for column `ProfileEvent_MergerMutatorPrepareRangesForMergeElapsedMicroseconds`:
 	ProfileEvent_MergerMutatorPrepareRangesForMergeElapsedMicroseconds.sparse.idx
@@ -3606,8 +3591,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled`:
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled.sparse.idx
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled
-2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
-	CurrentMetric_ThreadPoolFSReaderThreads.sparse.idx
+1 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
 	CurrentMetric_ThreadPoolFSReaderThreads
 2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreadsActive`:
 	CurrentMetric_ThreadPoolFSReaderThreadsActive.sparse.idx
@@ -4079,8 +4063,7 @@ columns substreams version: 1
 	CurrentMetric_PartsActive
 1 substreams for column `CurrentMetric_AttachedDatabase`:
 	CurrentMetric_AttachedDatabase
-2 substreams for column `CurrentMetric_AttachedTable`:
-	CurrentMetric_AttachedTable.sparse.idx
+1 substreams for column `CurrentMetric_AttachedTable`:
 	CurrentMetric_AttachedTable
 2 substreams for column `CurrentMetric_AttachedReplicatedTable`:
 	CurrentMetric_AttachedReplicatedTable.sparse.idx

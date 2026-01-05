@@ -1187,12 +1187,14 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_FetchBackgroundExecutorWaitMicroseconds`:
 	ProfileEvent_FetchBackgroundExecutorWaitMicroseconds.sparse.idx
 	ProfileEvent_FetchBackgroundExecutorWaitMicroseconds
-1 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds`:
+2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds`:
+	ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds.sparse.idx
 	ProfileEvent_CommonBackgroundExecutorTaskExecuteStepMicroseconds
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds.sparse.idx
 	ProfileEvent_CommonBackgroundExecutorTaskCancelMicroseconds
-1 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
+2 substreams for column `ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds`:
+	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds.sparse.idx
 	ProfileEvent_CommonBackgroundExecutorTaskResetMicroseconds
 2 substreams for column `ProfileEvent_CommonBackgroundExecutorWaitMicroseconds`:
 	ProfileEvent_CommonBackgroundExecutorWaitMicroseconds.sparse.idx
@@ -2581,7 +2583,8 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds`:
 	ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds.sparse.idx
 	ProfileEvent_MergeTreeAllRangesAnnouncementsSentElapsedMicroseconds
-1 substreams for column `ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds`:
+2 substreams for column `ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds`:
+	ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds.sparse.idx
 	ProfileEvent_MergerMutatorsGetPartsForMergeElapsedMicroseconds
 2 substreams for column `ProfileEvent_MergerMutatorPrepareRangesForMergeElapsedMicroseconds`:
 	ProfileEvent_MergerMutatorPrepareRangesForMergeElapsedMicroseconds.sparse.idx
@@ -3598,8 +3601,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled`:
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled.sparse.idx
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled
-2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
-	CurrentMetric_ThreadPoolFSReaderThreads.sparse.idx
+1 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
 	CurrentMetric_ThreadPoolFSReaderThreads
 2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreadsActive`:
 	CurrentMetric_ThreadPoolFSReaderThreadsActive.sparse.idx
@@ -4071,8 +4073,7 @@ columns substreams version: 1
 	CurrentMetric_PartsActive
 1 substreams for column `CurrentMetric_AttachedDatabase`:
 	CurrentMetric_AttachedDatabase
-2 substreams for column `CurrentMetric_AttachedTable`:
-	CurrentMetric_AttachedTable.sparse.idx
+1 substreams for column `CurrentMetric_AttachedTable`:
 	CurrentMetric_AttachedTable
 2 substreams for column `CurrentMetric_AttachedReplicatedTable`:
 	CurrentMetric_AttachedReplicatedTable.sparse.idx
@@ -4440,14 +4441,11 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_DiskConnectionsTotal`:
 	CurrentMetric_DiskConnectionsTotal.sparse.idx
 	CurrentMetric_DiskConnectionsTotal
-2 substreams for column `CurrentMetric_HTTPConnectionsStored`:
-	CurrentMetric_HTTPConnectionsStored.sparse.idx
+1 substreams for column `CurrentMetric_HTTPConnectionsStored`:
 	CurrentMetric_HTTPConnectionsStored
-2 substreams for column `CurrentMetric_HTTPConnectionsTotal`:
-	CurrentMetric_HTTPConnectionsTotal.sparse.idx
+1 substreams for column `CurrentMetric_HTTPConnectionsTotal`:
 	CurrentMetric_HTTPConnectionsTotal
-2 substreams for column `CurrentMetric_AddressesActive`:
-	CurrentMetric_AddressesActive.sparse.idx
+1 substreams for column `CurrentMetric_AddressesActive`:
 	CurrentMetric_AddressesActive
 2 substreams for column `CurrentMetric_AddressesBanned`:
 	CurrentMetric_AddressesBanned.sparse.idx

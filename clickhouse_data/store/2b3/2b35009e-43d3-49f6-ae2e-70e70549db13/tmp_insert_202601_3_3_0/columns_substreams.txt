@@ -18,9 +18,11 @@ columns substreams version: 1
 	query_start_time_microseconds
 1 substreams for column `query_duration_ms`:
 	query_duration_ms
-1 substreams for column `read_rows`:
+2 substreams for column `read_rows`:
+	read_rows.sparse.idx
 	read_rows
-1 substreams for column `read_bytes`:
+2 substreams for column `read_bytes`:
+	read_bytes.sparse.idx
 	read_bytes
 2 substreams for column `written_rows`:
 	written_rows.sparse.idx
@@ -28,9 +30,11 @@ columns substreams version: 1
 2 substreams for column `written_bytes`:
 	written_bytes.sparse.idx
 	written_bytes
-1 substreams for column `result_rows`:
+2 substreams for column `result_rows`:
+	result_rows.sparse.idx
 	result_rows
-1 substreams for column `result_bytes`:
+2 substreams for column `result_bytes`:
+	result_bytes.sparse.idx
 	result_bytes
 1 substreams for column `memory_usage`:
 	memory_usage
@@ -285,5 +289,6 @@ columns substreams version: 1
 	asynchronous_read_counters%2Ekeys.dict
 	asynchronous_read_counters%2Ekeys
 	asynchronous_read_counters%2Evalues
-1 substreams for column `is_internal`:
+2 substreams for column `is_internal`:
+	is_internal.sparse.idx
 	is_internal

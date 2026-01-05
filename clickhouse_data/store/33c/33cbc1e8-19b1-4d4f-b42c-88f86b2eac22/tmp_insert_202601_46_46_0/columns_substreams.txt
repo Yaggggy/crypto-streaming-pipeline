@@ -21,15 +21,13 @@ columns substreams version: 1
 	table.dict_prefix
 	table.dict
 	table
-2 substreams for column `table_uuid`:
-	table_uuid.sparse.idx
+1 substreams for column `table_uuid`:
 	table_uuid
 3 substreams for column `log_name`:
 	log_name.dict_prefix
 	log_name.dict
 	log_name
-2 substreams for column `duration_ms`:
-	duration_ms.sparse.idx
+1 substreams for column `duration_ms`:
 	duration_ms
 2 substreams for column `error`:
 	error.sparse.idx

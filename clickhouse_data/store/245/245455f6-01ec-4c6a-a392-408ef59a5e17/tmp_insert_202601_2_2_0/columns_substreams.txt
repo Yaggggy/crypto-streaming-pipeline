@@ -24,8 +24,7 @@ columns substreams version: 1
 2 substreams for column `last_error_message`:
 	last_error_message.size
 	last_error_message
-3 substreams for column `last_error_query_id`:
-	last_error_query_id.sparse.idx
+2 substreams for column `last_error_query_id`:
 	last_error_query_id.size
 	last_error_query_id
 2 substreams for column `last_error_trace`:

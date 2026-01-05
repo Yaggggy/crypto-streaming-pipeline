@@ -322,7 +322,8 @@ columns substreams version: 1
 2 substreams for column `ProfileEvent_QueryCacheWrittenBytes`:
 	ProfileEvent_QueryCacheWrittenBytes.sparse.idx
 	ProfileEvent_QueryCacheWrittenBytes
-1 substreams for column `ProfileEvent_CreatedReadBufferOrdinary`:
+2 substreams for column `ProfileEvent_CreatedReadBufferOrdinary`:
+	ProfileEvent_CreatedReadBufferOrdinary.sparse.idx
 	ProfileEvent_CreatedReadBufferOrdinary
 2 substreams for column `ProfileEvent_CreatedReadBufferDirectIO`:
 	ProfileEvent_CreatedReadBufferDirectIO.sparse.idx
@@ -1263,8 +1264,7 @@ columns substreams version: 1
 	ProfileEvent_RegexpLocalCacheMiss
 1 substreams for column `ProfileEvent_ContextLock`:
 	ProfileEvent_ContextLock
-2 substreams for column `ProfileEvent_ContextLockWaitMicroseconds`:
-	ProfileEvent_ContextLockWaitMicroseconds.sparse.idx
+1 substreams for column `ProfileEvent_ContextLockWaitMicroseconds`:
 	ProfileEvent_ContextLockWaitMicroseconds
 2 substreams for column `ProfileEvent_StorageBufferFlush`:
 	ProfileEvent_StorageBufferFlush.sparse.idx
@@ -3357,8 +3357,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_CacheDictionaryUpdateQueueKeys`:
 	CurrentMetric_CacheDictionaryUpdateQueueKeys.sparse.idx
 	CurrentMetric_CacheDictionaryUpdateQueueKeys
-2 substreams for column `CurrentMetric_DiskSpaceReservedForMerge`:
-	CurrentMetric_DiskSpaceReservedForMerge.sparse.idx
+1 substreams for column `CurrentMetric_DiskSpaceReservedForMerge`:
 	CurrentMetric_DiskSpaceReservedForMerge
 2 substreams for column `CurrentMetric_DistributedSend`:
 	CurrentMetric_DistributedSend.sparse.idx
@@ -3383,8 +3382,7 @@ columns substreams version: 1
 	CurrentMetric_PostgreSQLConnection
 1 substreams for column `CurrentMetric_OpenFileForRead`:
 	CurrentMetric_OpenFileForRead
-2 substreams for column `CurrentMetric_OpenFileForWrite`:
-	CurrentMetric_OpenFileForWrite.sparse.idx
+1 substreams for column `CurrentMetric_OpenFileForWrite`:
 	CurrentMetric_OpenFileForWrite
 2 substreams for column `CurrentMetric_Compressing`:
 	CurrentMetric_Compressing.sparse.idx
@@ -3495,8 +3493,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_RWLockWaitingWriters`:
 	CurrentMetric_RWLockWaitingWriters.sparse.idx
 	CurrentMetric_RWLockWaitingWriters
-2 substreams for column `CurrentMetric_RWLockActiveReaders`:
-	CurrentMetric_RWLockActiveReaders.sparse.idx
+1 substreams for column `CurrentMetric_RWLockActiveReaders`:
 	CurrentMetric_RWLockActiveReaders
 2 substreams for column `CurrentMetric_RWLockActiveWriters`:
 	CurrentMetric_RWLockActiveWriters.sparse.idx
@@ -3597,8 +3594,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled`:
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled.sparse.idx
 	CurrentMetric_ThreadPoolRemoteFSReaderThreadsScheduled
-2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
-	CurrentMetric_ThreadPoolFSReaderThreads.sparse.idx
+1 substreams for column `CurrentMetric_ThreadPoolFSReaderThreads`:
 	CurrentMetric_ThreadPoolFSReaderThreads
 2 substreams for column `CurrentMetric_ThreadPoolFSReaderThreadsActive`:
 	CurrentMetric_ThreadPoolFSReaderThreadsActive.sparse.idx
@@ -4053,8 +4049,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_MaxPushedDDLEntryID`:
 	CurrentMetric_MaxPushedDDLEntryID.sparse.idx
 	CurrentMetric_MaxPushedDDLEntryID
-2 substreams for column `CurrentMetric_PartsTemporary`:
-	CurrentMetric_PartsTemporary.sparse.idx
+1 substreams for column `CurrentMetric_PartsTemporary`:
 	CurrentMetric_PartsTemporary
 2 substreams for column `CurrentMetric_PartsPreCommitted`:
 	CurrentMetric_PartsPreCommitted.sparse.idx
@@ -4070,8 +4065,7 @@ columns substreams version: 1
 	CurrentMetric_PartsActive
 1 substreams for column `CurrentMetric_AttachedDatabase`:
 	CurrentMetric_AttachedDatabase
-2 substreams for column `CurrentMetric_AttachedTable`:
-	CurrentMetric_AttachedTable.sparse.idx
+1 substreams for column `CurrentMetric_AttachedTable`:
 	CurrentMetric_AttachedTable
 2 substreams for column `CurrentMetric_AttachedReplicatedTable`:
 	CurrentMetric_AttachedReplicatedTable.sparse.idx
@@ -4094,8 +4088,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_PartsWide`:
 	CurrentMetric_PartsWide.sparse.idx
 	CurrentMetric_PartsWide
-2 substreams for column `CurrentMetric_PartsCompact`:
-	CurrentMetric_PartsCompact.sparse.idx
+1 substreams for column `CurrentMetric_PartsCompact`:
 	CurrentMetric_PartsCompact
 1 substreams for column `CurrentMetric_MMappedFiles`:
 	CurrentMetric_MMappedFiles
@@ -4303,8 +4296,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_BcryptCacheSize`:
 	CurrentMetric_BcryptCacheSize.sparse.idx
 	CurrentMetric_BcryptCacheSize
-2 substreams for column `CurrentMetric_ColumnsDescriptionsCacheSize`:
-	CurrentMetric_ColumnsDescriptionsCacheSize.sparse.idx
+1 substreams for column `CurrentMetric_ColumnsDescriptionsCacheSize`:
 	CurrentMetric_ColumnsDescriptionsCacheSize
 2 substreams for column `CurrentMetric_S3Requests`:
 	CurrentMetric_S3Requests.sparse.idx
@@ -4463,8 +4455,7 @@ columns substreams version: 1
 2 substreams for column `CurrentMetric_ConcurrencyControlAcquired`:
 	CurrentMetric_ConcurrencyControlAcquired.sparse.idx
 	CurrentMetric_ConcurrencyControlAcquired
-2 substreams for column `CurrentMetric_ConcurrencyControlAcquiredNonCompeting`:
-	CurrentMetric_ConcurrencyControlAcquiredNonCompeting.sparse.idx
+1 substreams for column `CurrentMetric_ConcurrencyControlAcquiredNonCompeting`:
 	CurrentMetric_ConcurrencyControlAcquiredNonCompeting
 1 substreams for column `CurrentMetric_ConcurrencyControlSoftLimit`:
 	CurrentMetric_ConcurrencyControlSoftLimit

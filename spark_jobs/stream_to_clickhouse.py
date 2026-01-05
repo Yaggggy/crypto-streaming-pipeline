@@ -48,11 +48,11 @@ def write_to_clickhouse(df, epoch_id):
         .option("url", "jdbc:clickhouse://clickhouse:8123/default") \
         .option("dbtable", "btc_averages") \
         .option("user", "default") \
-        .option("password", "") \
-        .option("driver", "com.clickhouse.jdbc.ClickHouseDriver") \
+        .option("password", "password123") \
+        # CHANGE THIS LINE:
+        .option("driver", "ru.yandex.clickhouse.ClickHouseDriver") \
         .mode("append") \
         .save()
-
 # Start the stream
 query = agg_df.writeStream \
     .foreachBatch(write_to_clickhouse) \

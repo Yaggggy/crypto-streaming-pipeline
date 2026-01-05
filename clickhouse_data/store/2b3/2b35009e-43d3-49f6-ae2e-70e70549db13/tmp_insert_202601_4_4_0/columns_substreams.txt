@@ -16,7 +16,8 @@ columns substreams version: 1
 	query_start_time
 1 substreams for column `query_start_time_microseconds`:
 	query_start_time_microseconds
-1 substreams for column `query_duration_ms`:
+2 substreams for column `query_duration_ms`:
+	query_duration_ms.sparse.idx
 	query_duration_ms
 2 substreams for column `read_rows`:
 	read_rows.sparse.idx

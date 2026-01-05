@@ -21,8 +21,7 @@ columns substreams version: 1
 	table.dict_prefix
 	table.dict
 	table
-2 substreams for column `table_uuid`:
-	table_uuid.sparse.idx
+1 substreams for column `table_uuid`:
 	table_uuid
 3 substreams for column `log_name`:
 	log_name.dict_prefix
