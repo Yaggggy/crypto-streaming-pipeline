@@ -1,0 +1,11 @@
+columns substreams version: 1
+4 columns:
+1 substreams for column `window_start`:
+	window_start
+1 substreams for column `window_end`:
+	window_end
+2 substreams for column `product_id`:
+	product_id.size
+	product_id
+1 substreams for column `average_price`:
+	average_price

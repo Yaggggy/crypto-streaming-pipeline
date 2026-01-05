@@ -1,0 +1,1 @@
+{"columns":[{"kind":"Default","name":"average_price","num_defaults":0,"num_rows":1},{"kind":"Default","name":"product_id","num_defaults":0,"num_rows":1},{"kind":"Default","name":"window_end","num_defaults":0,"num_rows":1},{"kind":"Default","name":"window_start","num_defaults":0,"num_rows":1}],"types_serialization_versions":{"string":1},"version":1}

@@ -49,7 +49,6 @@ def write_to_clickhouse(df, epoch_id):
         .option("dbtable", "btc_averages") \
         .option("user", "default") \
         .option("password", "password123") \
-        # CHANGE THIS LINE:
         .option("driver", "ru.yandex.clickhouse.ClickHouseDriver") \
         .mode("append") \
         .save()

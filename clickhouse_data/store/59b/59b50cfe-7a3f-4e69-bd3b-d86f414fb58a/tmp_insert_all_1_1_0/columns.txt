@@ -1,0 +1,6 @@
+columns format version: 1
+4 columns:
+`window_start` DateTime
+`window_end` DateTime
+`product_id` String
+`average_price` Float64
