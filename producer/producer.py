@@ -9,9 +9,10 @@ load_dotenv()
 
 # --- Kafka Configuration ---
 conf = {
-    'bootstrap.servers': os.getenv('KAFKA_BOOTSTRAP_SERVERS'),
+    'bootstrap.servers': '127.0.0.1:9092', 
     'client.id': 'crypto-producer',
-    'acks': 'all'  # 'all' ensures the broker confirms receipt (Reliability)
+    'acks': 'all',
+    'broker.address.family': 'v4'
 }
 
 # Initialize the Producer
@@ -39,9 +40,6 @@ def on_message(ws, message):
             "side": data.get("side"),
             "time": data.get("time")
         }
-        
-        # Serialize to JSON string and send to Kafka
-        # poll(0) checks for delivery callbacks from previous messages
         producer.poll(0)
         
         producer.produce(
