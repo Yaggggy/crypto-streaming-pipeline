@@ -45,3 +45,76 @@ An end-to-end distributed data engineering pipeline that ingests live Bitcoin tr
 │   └── requirements.txt     # Python dependencies for producer
 └── spark_jobs/
     └── stream_to_clickhouse.py  # Script: PySpark Aggregation -> Writes to ClickHouse
+```
+
+## How to Run
+
+1. Prerequisites
+Docker Desktop installed and running.
+
+Python 3.x installed (for local testing, though the project runs in Docker).
+
+2. Start Infrastructure
+Spin up the containerized environment. This creates the network and named volumes.
+
+```text
+docker-compose up -d
+```
+3. Initialize Database
+
+Create the destination table in ClickHouse.
+
+
+
+```text
+docker exec -it clickhouse clickhouse-client --user default --password password123 --query " CREATE TABLE IF NOT EXISTS btc_averages (
+    window_start DateTime,
+    window_end DateTime,
+    product_id String,
+    average_price Float64
+) ENGINE = MergeTree()
+ORDER BY window_start;"
+```
+
+
+4. Start Data Producer
+Run the producer to start streaming live trades into the Kafka topic.
+
+```textpython producer/producer.py```
+
+Expected Log: Delivered to raw_crypto_trades
+
+5. Submit Spark Job
+Submit the job to the Spark Master. Note: I use the ru.yandex legacy driver to ensure compatibility with Spark's internal HTTP clients.
+
+```text
+
+docker exec spark spark-submit \
+  --packages "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0,ru.yandex.clickhouse:clickhouse-jdbc:0.3.2" \
+  /app/spark_jobs/stream_to_clickhouse.py
+```
+
+6. Verify Results
+Watch the aggregated data land in the database in real-time.
+```text
+docker exec -it clickhouse clickhouse-client --user default --password password123 --query "SELECT * FROM btc_averages ORDER BY window_start DESC LIMIT 10"
+```
+
+##Troubleshooting & Challenges Solved
+1. "Permission Denied" on Windows/WSL2
+Issue: Mounting a local folder to ClickHouse caused filesystem errors (errno 1001).
+
+Solution: Migrated from bind mounts to Docker Named Volumes (clickhouse_storage) to bypass the host filesystem permissions entirely.
+
+2. Dependency Conflict (Class Not Found)
+Issue: The official ClickHouse JDBC driver (com.clickhouse) conflicted with Spark's internal HTTP libraries.
+
+Solution: Implemented the Legacy Yandex Driver (ru.yandex.clickhouse:0.3.2) which is stable for Spark 3.x integration.
+
+3. "Transactions Unsupported" Warning
+Context: Spark logs warnings about isolation levels.
+
+Resolution: These are expected behaviors for OLAP databases. The pipeline correctly handles this by appending data regardless of transaction support.
+
+
+Created by Yagyansh 
