@@ -47,12 +47,30 @@ services:
       - "8123:8123"
       - "9000:9000"
     environment:
+      - CLICKHOUSE_USER=default
       - CLICKHOUSE_PASSWORD=password123
     volumes:
-      - ./clickhouse_data:/var/lib/clickhouse
+      - clickhouse_storage:/var/lib/clickhouse
+    networks:
+      - pipeline_network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - clickhouse
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clickhouse-datasource
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
     networks:
       - pipeline_network
 
 networks:
   pipeline_network:
     driver: bridge
+
+volumes:
+  clickhouse_storage:

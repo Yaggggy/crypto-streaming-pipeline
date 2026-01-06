@@ -4,7 +4,6 @@ import os
 from dotenv import load_dotenv
 from confluent_kafka import Producer
 
-# Load environment variables
 load_dotenv()
 
 # --- Kafka Configuration ---
@@ -22,10 +21,10 @@ topic = os.getenv('KAFKA_TOPIC_RAW_TRADES')
 def delivery_report(err, msg):
     """Callback: Called once for each message to check if it was delivered."""
     if err is not None:
-        print(f"❌ Message delivery failed: {err}")
+        print(f"Message delivery failed: {err}")
     else:
         # We print purely for verification. In production, you'd log this silently.
-        print(f"✅ Delivered to {msg.topic()} [{msg.partition()}]")
+        print(f"Delivered to {msg.topic()} [{msg.partition()}]")
 
 def on_message(ws, message):
     data = json.loads(message)
