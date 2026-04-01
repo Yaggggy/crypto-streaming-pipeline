@@ -23,7 +23,7 @@ def delivery_report(err, msg):
     if err is not None:
         print(f"Message delivery failed: {err}")
     else:
-        # We print purely for verification. In production, you'd log this silently.
+        # print purely for verification.
         print(f"Delivered to {msg.topic()} [{msg.partition()}]")
 
 def on_message(ws, message):
